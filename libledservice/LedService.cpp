@@ -106,7 +106,7 @@ LedService::LedService()
 LedService::~LedService()
 {
 }
-//Singleton
+//Singleton的考量， 实例化
 void LedService::instantiate() {
      defaultServiceManager()->addService(
              String16("mokoid.led"), new LedService());
