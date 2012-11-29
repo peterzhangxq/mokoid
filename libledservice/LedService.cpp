@@ -74,6 +74,8 @@ status_t BnLedService::onTransact(
         } break;
 	case LED_ON:
 	    return NO_ERROR;
+	case LED_OFF:
+	    return NO_ERROR;
         default:
             return BBinder::onTransact(code, data, reply, flags);
     }
